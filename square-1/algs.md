@@ -42,7 +42,7 @@ I don't see any point in writing up CO algorithms in any detail.
 | Source                         | Effect                    | Algorithm                          |
 | ------------------------------ | ------------------------- | ---------------------------------- |
 | Brandon<br />Andrew<br />Sarah | Swap UL-DF and UF-DR      | 1,0 / 3,0 / -1,-1 / -3,0 / [0,1] * |
-| Vandebergh                     | Pure swap UL-DR and UB-DF | 1,0 / -3,0 / -1,-1 / 4,1 / [-1,0]  |
+| Lars                           | Pure swap UL-DR and UB-DF | 1,0 / -3,0 / -1,-1 / 4,1 / [-1,0]  |
 | Noob                           | Pure swap UB-DB and UR-DR | -2,0 / -3,0 / -1,-1 / 4,1 / [2,0]  |
 
 ### Opposite / Opposite
@@ -50,16 +50,16 @@ I don't see any point in writing up CO algorithms in any detail.
 | Source                                   | Effect                    | Algorithm             |
 | ---------------------------------------- | ------------------------- | --------------------- |
 | Brandon<br />Andrew<br />Sarah<br />Noob | Pure swap UF-DB and UB-DF | 1,0 / -1,-1 / [0,1] * |
-| Vandebergh<br />Andrew                   | Pure swap UF-DB and UB-DF | 0,-1 / 1,1 / [-1,0]   |
+| Lars<br />Andrew                         | Pure swap UF-DB and UB-DF | 0,-1 / 1,1 / [-1,0]   |
 
 ### Single / Single
 
-| Source                 | Effect     | Algorithm                                        |
-| ---------------------- | ---------- | ------------------------------------------------ |
-| Brandon<br />Sarah     | Swap UR-DB | 1,0 / 3,0 / 3,0 / -1,-1 / -2,1 / -3,0 / [-1,0] * |
-| DGCubes                | Swap UR-DR | 1,0 / 0,-3 / 0,-3 / -1,-1 / 1,4 / 0,3 / [-1,0]   |
-| Andrew<br />Vandebergh | Swap UB-DF | 0,-1 / -3,0 / 4,1 / -4,-1 / 3,0 / [0,1]          |
-| Noob                   | Swap UR-DR | 1,0 / -3,0 / -3,0 / -1,-1 / 1,-2 / -3,0 / [2,6]  |
+| Source             | Effect     | Algorithm                                        |
+| ------------------ | ---------- | ------------------------------------------------ |
+| Brandon<br />Sarah | Swap UR-DB | 1,0 / 3,0 / 3,0 / -1,-1 / -2,1 / -3,0 / [-1,0] * |
+| DGCubes            | Swap UR-DR | 1,0 / 0,-3 / 0,-3 / -1,-1 / 1,4 / 0,3 / [-1,0]   |
+| Andrew<br />Lars   | Swap UB-DF | 0,-1 / -3,0 / 4,1 / -4,-1 / 3,0 / [0,1]          |
+| Noob               | Swap UR-DR | 1,0 / -3,0 / -3,0 / -1,-1 / 1,-2 / -3,0 / [2,6]  |
 
 ### 3 Edges
 
@@ -97,17 +97,17 @@ I don't see any point in writing up CO algorithms in any detail.
 
 ### J / J
 
-| Source                                         | Effect                   | Algorithm               |
-| ---------------------------------------------- | ------------------------ | ----------------------- |
-| Brandon<br />Andrew<br />Vandenbergh<br />Noob | Swap UFL-UFR and DFL-DFR | / -3,0 / 3,3 / 0,-3 / * |
-| Sarah                                          | Swap UBL-UBR and DBL-DBR | / 3,0 / -3,-3 / 0,3 /   |
+| Source                                  | Effect                   | Algorithm               |
+| --------------------------------------- | ------------------------ | ----------------------- |
+| Brandon<br />Andrew<br />Lars<br />Noob | Swap UFL-UFR and DFL-DFR | / -3,0 / 3,3 / 0,-3 / * |
+| Sarah                                   | Swap UBL-UBR and DBL-DBR | / 3,0 / -3,-3 / 0,3 /   |
 
 ### N / N
 
 | Source                         | Effect                | Algorithm         |
 | ------------------------------ | --------------------- | ----------------- |
 | Brandon<br />Andrew<br />Sarah | Swap diagonal corners | / 3,-3 / -3,3 / * |
-| Vandenbergh                    | Swap diagonal corners | / 3,-3 / 3,-3 /   |
+| Lars                           | Swap diagonal corners | / 3,-3 / 3,-3 /   |
 | Noob                           | Swap diagonal corners | / -3,3 / 3,-3 /   |
 
 ### N / J
@@ -126,10 +126,10 @@ I don't see any point in writing up CO algorithms in any detail.
 
 ### Solved / J
 
-| Source                              | Effect       | Algorithm                          |
-| ----------------------------------- | ------------ | ---------------------------------- |
-| Brandon<br />Vandenbergh<br />Sarah | Swap DFL-DFR | / 3,-3 / 0,3 / -3,0 / 3,0 / -3,0 / |
-| DGCubes                             | Swap DFL-DFR | / 3,-3 / -3,0 / 0,3 / 0,-3 / 0,3 / |
+| Source                       | Effect       | Algorithm                          |
+| ---------------------------- | ------------ | ---------------------------------- |
+| Brandon<br />Lars<br />Sarah | Swap DFL-DFR | / 3,-3 / 0,3 / -3,0 / 3,0 / -3,0 / |
+| DGCubes                      | Swap DFL-DFR | / 3,-3 / -3,0 / 0,3 / 0,-3 / 0,3 / |
 
 ### J / Solved
 
@@ -175,12 +175,12 @@ Note: Charlie's spreadsheet shows the probabilities and combinations of the abov
 
 ### Opposite / Opposite
 
-| Source      | Effect               | Algorithm                                     |
-| ----------- | -------------------- | --------------------------------------------- |
-| Andrew      | Swap UF-UB and DF-DB | 1,0 / -1,-1 / 6,0 / 1,1 / [5,0]               |
-| Brandon     | Swap UF-UB and DF-DB | 1,0 / -1,-1 / 0,1 / 6,0 / 1,0 / -1,-1 / [6,1] |
-| Vandenbergh | Swap UF-UB and DF-DB | 1,0 / 5,-1 / -5,1 / 5,0)                      |
-| Noob        | Swap UF-UB and DF-DB | 1,0 / -1,-1 / -5,1 / -1,-1 / [6,1]            |
+| Source  | Effect               | Algorithm                                     |
+| ------- | -------------------- | --------------------------------------------- |
+| Andrew  | Swap UF-UB and DF-DB | 1,0 / -1,-1 / 6,0 / 1,1 / [5,0]               |
+| Brandon | Swap UF-UB and DF-DB | 1,0 / -1,-1 / 0,1 / 6,0 / 1,0 / -1,-1 / [6,1] |
+| Lars    | Swap UF-UB and DF-DB | 1,0 / 5,-1 / -5,1 / 5,0)                      |
+| Noob    | Swap UF-UB and DF-DB | 1,0 / -1,-1 / -5,1 / -1,-1 / [6,1]            |
 
 ### TODO
 
@@ -218,9 +218,10 @@ AlgDB.net:
 
 Charlie Stark's algorithms were taken from Speedsolving.com:
 
-https://www.speedsolving.com/forum/threads/the-square-1-help-alg-sharing-thread.37858/page-30#post-1200039
+- https://www.speedsolving.com/forum/threads/the-square-1-help-alg-sharing-thread.37858/page-30#post-1200039
 
-https://www.speedsolving.com/forum/threads/square-1-edge-parity.63931/#post-1220690
+- https://www.speedsolving.com/forum/threads/square-1-edge-parity.63931/#post-1220690
+
 
 
 
@@ -228,16 +229,16 @@ https://www.speedsolving.com/forum/threads/square-1-edge-parity.63931/#post-1220
 
 ### E-Slice
 
-| Source                                                      | Effect           | Algorithm            |
-| ----------------------------------------------------------- | ---------------- | -------------------- |
-| Brandon<br />Andrew<br />DGCubes<br />Vandenburgh<br />Noob | Flip the equator | / 6,0 / 6 ,0 / [6,0] |
+| Source                                               | Effect           | Algorithm            |
+| ---------------------------------------------------- | ---------------- | -------------------- |
+| Brandon<br />Andrew<br />DGCubes<br />Lars<br />Noob | Flip the equator | / 6,0 / 6 ,0 / [6,0] |
 
 ### Exchanging Layers
 
 | Source                         | Effect           | Algorithm            |
 | ------------------------------ | ---------------- | -------------------- |
 | Brandon<br />DGCubes<br />Noob | Swap both layers | / 6,6 / [-1,1]       |
-| Vandenbergh                    | Swap both layers | / 1,0 / 6,6 / [-1,0] |
+| Lars                           | Swap both layers | / 1,0 / 6,6 / [-1,0] |
 
 
 
@@ -343,23 +344,26 @@ Equator flip: / 6, 0 / 6, 0 / 6, 0)
 
 ### Guides
 
-[How to Solve a Square-1](http://brandonlin.com/cubing/sq1tutorial.html) by Brandon Lin
+- [How to Solve a Square-1](http://brandonlin.com/cubing/sq1tutorial.html) by Brandon Lin
 
-[Square-1 Tutorial](http://andrewknelson.com/square-1-tutorial/) by Andrew K. Nelson
+- [Square-1 Tutorial](http://andrewknelson.com/square-1-tutorial/) by Andrew K. Nelson
 
-[(Back to) Square One / Cube 21](https://www.jaapsch.net/puzzles/square1.htm#s2m1) on Jaap's Puzzle Page
+- [(Back to) Square One / Cube 21](https://www.jaapsch.net/puzzles/square1.htm#s2m1) on Jaap's Puzzle Page
 
-[Square-1 Solution](http://www.cubezone.be/square1.html) on Lars Vandenbergh's CubeZone
+- [Square-1 Solution](http://www.cubezone.be/square1.html) on Lars Vandenbergh's CubeZone
+
 
 ### Algorithms
 
-[EO and CP Algorithms](http://brandonlin.com/cubing/eocp.html) by Brandon Lin
+- [EO and CP Algorithms](http://brandonlin.com/cubing/eocp.html) by Brandon Lin
 
-[EP List](https://docs.google.com/spreadsheets/d/16lJ3YvrVJOi6AxkrM2W4MfRVQCbJWiKd_yjCTaMs8QA/edit#gid=0) by Charlie Stark
+- [EP List](https://docs.google.com/spreadsheets/d/16lJ3YvrVJOi6AxkrM2W4MfRVQCbJWiKd_yjCTaMs8QA/edit#gid=0) by Charlie Stark
 
-[Square-1](http://algdb.net/puzzle/sq1) on AlgDB.net
+- [Square-1](http://algdb.net/puzzle/sq1) on AlgDB.net
+
 
 ### Forums
 
-[The "Square-1 Help / Alg Sharing" thread](https://www.speedsolving.com/forum/threads/the-square-1-help-alg-sharing-thread.37858/) on Speedsolving.com
+- [The "Square-1 Help / Alg Sharing" thread](https://www.speedsolving.com/forum/threads/the-square-1-help-alg-sharing-thread.37858/) on Speedsolving.com
+
 
