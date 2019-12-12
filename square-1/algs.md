@@ -179,7 +179,7 @@ Note: Charlie's spreadsheet shows the probabilities and combinations of the abov
 | ------- | -------------------- | --------------------------------------------- |
 | Andrew  | Swap UF-UB and DF-DB | 1,0 / -1,-1 / 6,0 / 1,1 / [5,0]               |
 | Brandon | Swap UF-UB and DF-DB | 1,0 / -1,-1 / 0,1 / 6,0 / 1,0 / -1,-1 / [6,1] |
-| Lars    | Swap UF-UB and DF-DB | 1,0 / 5,-1 / -5,1 / 5,0)                      |
+| Lars    | Swap UF-UB and DF-DB | 1,0 / 5,-1 / -5,1 / [5,0]                     |
 | Noob    | Swap UF-UB and DF-DB | 1,0 / -1,-1 / -5,1 / -1,-1 / [6,1]            |
 
 ### TODO
